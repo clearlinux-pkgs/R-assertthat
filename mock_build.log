@@ -1,0 +1,31 @@
+INFO: mock.py version 1.2.14 starting (python version = 2.7.12)...
+Start: init plugins
+INFO: selinux disabled
+Finish: init plugins
+Start: run
+INFO: Start(results/R-assertthat-0.2.0-1.src.rpm)  Config(clear)
+Start: clean chroot
+Finish: clean chroot
+Start: chroot init
+INFO: calling preinit hooks
+INFO: enabled root cache
+Start: unpacking root cache
+Finish: unpacking root cache
+INFO: enabled yum cache
+Start: cleaning yum metadata
+Finish: cleaning yum metadata
+INFO: enabled ccache
+Mock Version: 1.2.14
+INFO: Mock Version: 1.2.14
+Start: yum update
+Finish: yum update
+Finish: chroot init
+Start: build phase for R-assertthat-0.2.0-1.src.rpm
+Start: build setup for R-assertthat-0.2.0-1.src.rpm
+Finish: build setup for R-assertthat-0.2.0-1.src.rpm
+Start: rpmbuild R-assertthat-0.2.0-1.src.rpm
+Finish: rpmbuild R-assertthat-0.2.0-1.src.rpm
+Finish: build phase for R-assertthat-0.2.0-1.src.rpm
+INFO: Done(results/R-assertthat-0.2.0-1.src.rpm) Config(clear) 0 minutes 21 seconds
+INFO: Results and/or logs in: results/
+Finish: run
