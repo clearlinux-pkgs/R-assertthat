@@ -3,7 +3,7 @@ Start: init plugins
 INFO: selinux disabled
 Finish: init plugins
 Start: run
-INFO: Start(results/R-assertthat-0.2.0-2.src.rpm)  Config(clear)
+INFO: Start(results/R-assertthat-0.2.0-5.src.rpm)  Config(clear)
 Start: clean chroot
 Finish: clean chroot
 Start: chroot init
@@ -17,15 +17,16 @@ Finish: cleaning yum metadata
 INFO: enabled ccache
 Mock Version: 1.2.14
 INFO: Mock Version: 1.2.14
+WARNING: For multilib systems, both architectures of nosync library need to be installed
 Start: yum update
 Finish: yum update
 Finish: chroot init
-Start: build phase for R-assertthat-0.2.0-2.src.rpm
-Start: build setup for R-assertthat-0.2.0-2.src.rpm
-Finish: build setup for R-assertthat-0.2.0-2.src.rpm
-Start: rpmbuild R-assertthat-0.2.0-2.src.rpm
-Finish: rpmbuild R-assertthat-0.2.0-2.src.rpm
-Finish: build phase for R-assertthat-0.2.0-2.src.rpm
-INFO: Done(results/R-assertthat-0.2.0-2.src.rpm) Config(clear) 0 minutes 21 seconds
+Start: build phase for R-assertthat-0.2.0-5.src.rpm
+Start: build setup for R-assertthat-0.2.0-5.src.rpm
+Finish: build setup for R-assertthat-0.2.0-5.src.rpm
+Start: rpmbuild R-assertthat-0.2.0-5.src.rpm
+Finish: rpmbuild R-assertthat-0.2.0-5.src.rpm
+Finish: build phase for R-assertthat-0.2.0-5.src.rpm
+INFO: Done(results/R-assertthat-0.2.0-5.src.rpm) Config(clear) 0 minutes 19 seconds
 INFO: Results and/or logs in: results/
 Finish: run

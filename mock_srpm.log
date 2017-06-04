@@ -14,8 +14,10 @@ Finish: unpacking root cache
 INFO: enabled yum cache
 Start: cleaning yum metadata
 Finish: cleaning yum metadata
+INFO: enabled ccache
 Mock Version: 1.2.14
 INFO: Mock Version: 1.2.14
+WARNING: For multilib systems, both architectures of nosync library need to be installed
 Start: yum update
 Finish: yum update
 Finish: chroot init
