@@ -4,7 +4,7 @@
 #
 Name     : R-assertthat
 Version  : 0.2.0
-Release  : 7
+Release  : 8
 URL      : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Summary  : Easy Pre and Post Assertions
@@ -13,8 +13,9 @@ License  : GPL-3.0
 BuildRequires : clr-R-helpers
 
 %description
-# assertthat
-[![Travis-CI Build Status](https://travis-ci.org/hadley/assertthat.svg?branch=master)](https://travis-ci.org/hadley/assertthat)
+easy to declare the pre and post conditions that you code should
+    satisfy, while also producing friendly error messages so that your
+    users know what they've done wrong.
 
 %prep
 %setup -q -c -n assertthat
@@ -24,11 +25,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1496603892
+export SOURCE_DATE_EPOCH=1502396439
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1496603892
+export SOURCE_DATE_EPOCH=1502396439
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

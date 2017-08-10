@@ -25,6 +25,6 @@ Start: buildsrpm
 Start: rpmbuild -bs
 Finish: rpmbuild -bs
 Finish: buildsrpm
-INFO: Done(R-assertthat.spec) Config(clear) 0 minutes 5 seconds
+INFO: Done(R-assertthat.spec) Config(clear) 0 minutes 11 seconds
 INFO: Results and/or logs in: results/
 Finish: run
