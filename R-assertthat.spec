@@ -4,7 +4,7 @@
 #
 Name     : R-assertthat
 Version  : 0.2.0
-Release  : 8
+Release  : 9
 URL      : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Summary  : Easy Pre and Post Assertions
@@ -25,11 +25,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1502396439
+export SOURCE_DATE_EPOCH=1502400638
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1502396439
+export SOURCE_DATE_EPOCH=1502400638
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
