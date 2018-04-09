@@ -1,4 +1,4 @@
-INFO: mock.py version 1.2.14 starting (python version = 2.7.12)...
+INFO: mock.py version 1.2.14 starting (python version = 3.6.5)...
 Start: init plugins
 INFO: selinux disabled
 Finish: init plugins
@@ -11,20 +11,19 @@ INFO: calling preinit hooks
 INFO: enabled root cache
 Start: unpacking root cache
 Finish: unpacking root cache
-INFO: enabled yum cache
-Start: cleaning yum metadata
-Finish: cleaning yum metadata
-INFO: enabled ccache
+INFO: enabled dnf cache
+Start: cleaning dnf metadata
+Finish: cleaning dnf metadata
 Mock Version: 1.2.14
 INFO: Mock Version: 1.2.14
 WARNING: For multilib systems, both architectures of nosync library need to be installed
-Start: yum update
-Finish: yum update
+Start: dnf update
+Finish: dnf update
 Finish: chroot init
 Start: buildsrpm
 Start: rpmbuild -bs
 Finish: rpmbuild -bs
 Finish: buildsrpm
-INFO: Done(R-assertthat.spec) Config(clear) 0 minutes 11 seconds
+INFO: Done(R-assertthat.spec) Config(clear) 0 minutes 7 seconds
 INFO: Results and/or logs in: results/
 Finish: run
