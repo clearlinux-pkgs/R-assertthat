@@ -4,7 +4,7 @@
 #
 Name     : R-assertthat
 Version  : 0.2.0
-Release  : 21
+Release  : 22
 URL      : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Summary  : Easy Pre and Post Assertions
