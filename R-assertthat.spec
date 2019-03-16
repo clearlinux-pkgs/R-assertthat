@@ -4,18 +4,17 @@
 #
 Name     : R-assertthat
 Version  : 0.2.0
-Release  : 26
+Release  : 27
 URL      : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/assertthat_0.2.0.tar.gz
 Summary  : Easy Pre and Post Assertions
 Group    : Development/Tools
 License  : GPL-3.0
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
-easy to declare the pre and post conditions that you code should
-    satisfy, while also producing friendly error messages so that your
-    users know what they've done wrong.
+# assertthat
+[![Travis-CI Build Status](https://travis-ci.org/hadley/assertthat.svg?branch=master)](https://travis-ci.org/hadley/assertthat)
 
 %prep
 %setup -q -c -n assertthat
@@ -25,11 +24,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523288593
+export SOURCE_DATE_EPOCH=1552712194
 
 %install
+export SOURCE_DATE_EPOCH=1552712194
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523288593
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -64,8 +63,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library assertthat|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  assertthat || :
 
 
 %files
@@ -89,3 +87,8 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/assertthat/help/paths.rds
 /usr/lib64/R/library/assertthat/html/00Index.html
 /usr/lib64/R/library/assertthat/html/R.css
+/usr/lib64/R/library/assertthat/tests/testthat.R
+/usr/lib64/R/library/assertthat/tests/testthat/test-assertions.R
+/usr/lib64/R/library/assertthat/tests/testthat/test-base.R
+/usr/lib64/R/library/assertthat/tests/testthat/test-file.R
+/usr/lib64/R/library/assertthat/tests/testthat/test-scalar.R
