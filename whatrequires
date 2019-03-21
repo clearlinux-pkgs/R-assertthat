@@ -8,11 +8,9 @@ R-RcppProgress
 R-RcppRoll
 R-TSP
 R-callr
-R-clustMixType
 R-dcurver
 R-desc
 R-fail
-R-fs
 R-ggridges
 R-ggvis
 R-glue
@@ -29,7 +27,6 @@ R-lhs
 R-lme4
 R-loo
 R-magrittr
-R-msm
 R-nloptr
 R-optparse
 R-packrat
@@ -57,6 +54,7 @@ R-rematch
 R-remotes
 R-reshape2
 R-rgenoud
+R-rhub
 R-rjstat
 R-rotl
 R-rsdmx
