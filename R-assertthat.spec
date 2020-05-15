@@ -4,37 +4,37 @@
 #
 Name     : R-assertthat
 Version  : 0.2.1
-Release  : 41
+Release  : 42
 URL      : https://cran.r-project.org/src/contrib/assertthat_0.2.1.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/assertthat_0.2.1.tar.gz
 Summary  : Easy Pre and Post Assertions
 Group    : Development/Tools
 License  : GPL-3.0
 BuildRequires : buildreq-R
-BuildRequires : util-linux
 
 %description
-# assertthat
-[![Travis-CI Build Status](https://travis-ci.org/hadley/assertthat.svg?branch=master)](https://travis-ci.org/hadley/assertthat)
-[![Coverage status](https://codecov.io/gh/hadley/assertthat/branch/master/graph/badge.svg)](https://codecov.io/github/hadley/assertthat?branch=master)
+the pre and post conditions that you code should satisfy, while also 
+    producing friendly error messages so that your users know what's gone
+    wrong.
 
 %prep
 %setup -q -c -n assertthat
+cd %{_builddir}/assertthat
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1571796840
+export SOURCE_DATE_EPOCH=1589507454
 
 %install
-export SOURCE_DATE_EPOCH=1571796840
+export SOURCE_DATE_EPOCH=1589507454
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
